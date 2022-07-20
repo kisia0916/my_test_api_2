@@ -8,7 +8,7 @@ app.post("/",async(req,res)=>{
     }
     res.send(a);//ここで送信
 })
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log("run");
 })
 
